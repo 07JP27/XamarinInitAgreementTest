@@ -11,6 +11,7 @@ namespace InitAgreementTest
         public InitAgreementView()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
         }
 
         void AgreeButtonClicked(object sender, System.EventArgs e)
@@ -21,8 +22,20 @@ namespace InitAgreementTest
             */
 
             AppCenter.Start("ios={secret};", typeof(Analytics));
-            Application.Current.MainPage = new NavigationPage(new TopView());
+            Application.Current.MainPage = new NavigationPage(new TopView()){
+                BarBackgroundColor = new Color(0.00, 0.44, 0.74),
+                BarTextColor = Color.White
+            };
+        }
 
+        void ViewAgreementClicked(object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new AgreementArticleView());
+        }
+
+        void ViewPolicyClicked(object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new PolicyArticleView());
         }
     }
 }

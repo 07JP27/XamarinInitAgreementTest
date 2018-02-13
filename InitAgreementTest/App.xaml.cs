@@ -18,18 +18,27 @@ namespace InitAgreementTest
                 if ((isAgreed is null) || ((bool)isAgreed) == false)
                 {
                     //初期ローンチ
-                    MainPage = new NavigationPage(new InitAgreementView());
+                    MainPage = new NavigationPage(new InitAgreementView()){
+                        BarBackgroundColor = new Color(0.00, 0.44, 0.74),
+                        BarTextColor = Color.White
+                    };
                 }
                 else
                 {
                     AppCenter.Start("ios={secret};", typeof(Analytics));
-                    MainPage = new NavigationPage(new TopView());
+                    MainPage = new NavigationPage(new TopView()){
+                        BarBackgroundColor = new Color(0.00, 0.44, 0.74),
+                        BarTextColor = Color.White
+                    };
                 }
             }
             catch(KeyNotFoundException)
             {
                 //初期ローンチ
-                MainPage = new NavigationPage(new InitAgreementView());
+                MainPage = new NavigationPage(new InitAgreementView()){
+                    BarBackgroundColor = new Color(0.00, 0.44, 0.74),
+                    BarTextColor = Color.White
+                };
             }
         }
 

@@ -2,5 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="InitAgreementTest.InitAgreementView">
 	<StackLayout>
         <Button Text="同意して始める" Clicked="AgreeButtonClicked" />
+        <Button Text="利用規約" Clicked="ViewAgreementClicked" />
+        <Button Text="プライバシーポリシー" Clicked="ViewPolicyClicked" />
     </StackLayout>
 </ContentPage>
