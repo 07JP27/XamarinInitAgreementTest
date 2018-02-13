@@ -50,3 +50,15 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+.DS_Store
+InitAgreementTest.userprefs
+packages
+InitAgreementTest/bin
+InitAgreementTest/obj
+Droid/bin
+Droid/obj
+iOS/bin
+iOS/obj
+UITests/bin
+UITests/obj
