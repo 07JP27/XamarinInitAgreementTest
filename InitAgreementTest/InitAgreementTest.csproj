@@ -45,6 +45,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="IframeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -62,6 +66,9 @@
     </Compile>
     <Compile Include="PolicyArticleView.xaml.cs">
       <DependentUpon>PolicyArticleView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IframeView.xaml.cs">
+      <DependentUpon>IframeView.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

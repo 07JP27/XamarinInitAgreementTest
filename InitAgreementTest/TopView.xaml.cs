@@ -10,8 +10,11 @@ namespace InitAgreementTest
         public TopView()
         {
             InitializeComponent();
-            NavigationPage.SetHasNavigationBar(this, false);
-            //Analytics.TrackEvent("View", new Dictionary<string, string> { { "View", "AfterAgreement" } });
+        }
+
+        void Handle_Clicked(object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new IframeView());
         }
     }
 }
